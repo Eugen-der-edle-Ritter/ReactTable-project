@@ -1,0 +1,161 @@
+body {
+  background: hsla(212, 90%, 8%, 1);
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  color: #F1A208;
+  font-family: 'Monoton', cursive;
+  line-height: 0;
+  text-align: center;
+  font-size: 52px;
+  
+}
+button, input {
+  border: 2px solid #06A77D;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+button {
+  margin-left: 0.1em;
+  padding: 0.6em;
+  background: hsla(0, 0%, 0%, 0.4);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input {
+  padding-left: 6px;
+}
+button:disabled {
+  background: #A70630;
+  cursor: default;
+}
+textarea:disabled {
+  width: 90%;
+  height: 50px;
+  padding: 0.5em;
+  resize: none;
+  background: hsla(0, 0%, 50%, 0.1);
+  color: #06A77D;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+  cursor: default;
+  user-select: none;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px;
+}
+.conrtolPanel {
+  display: flex;
+}
+.inputArea {
+  flex: 1;
+  border-radius: 8px;
+}
+.pageList {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style-type: none;
+}
+.pageList li {
+  padding: 0 1em;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.active {
+  border: 2px solid #06A77D;
+  border-radius: 0.3em;
+}
+.detailView {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.7em;
+  background: white;
+  color: #06A77D;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.addForm {
+  margin: 24px 0;
+  display: flex;
+}
+.formItem {
+  display: flex;
+  flex-direction: column;
+  background: #06A77D;
+  color: white;
+  text-align: center;
+  user-select: none;
+}
+.formItem input {
+  width: 100%;
+}
+.list {
+  padding: 0;
+}
+.listItem {
+  margin: 10px 0;
+  padding-left: 12px;
+  display: flex;
+  background: hsla(0, 0%, 50%, 0.2);
+  color: white;
+  border-radius: 10px;
+  line-height: 2em;
+  cursor: pointer;
+}
+.listItem:hover {
+  background: hsla(0, 0%, 50%, 0.4);
+}
+.title {
+  margin-left: -12px;
+  display: flex;
+  justify-content: center;
+  background: hsla(40, 94%, 45%, 1);
+  cursor: pointer;
+  user-select: none;
+}
+.title:hover {
+  background: hsla(40, 94%, 49%, 1);
+}
+.id {
+  flex: 1;
+}
+.firstName, .lastName{
+  flex: 2;
+}
+.email, .phone {
+  flex: 3;
+}
+.asc, .desc, .unorder {
+  width: 30px;
+  height: 100%;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  pointer-events: none;
+}
+.asc {
+  background-image: url('https://raw.githubusercontent.com/Eugen-der-edle-Ritter/data_storage/9f24a377f648847a5ee36a3f006bf8742f1bea6d/asc.svg');
+}
+.desc {
+  background-image: url('https://raw.githubusercontent.com/Eugen-der-edle-Ritter/data_storage/9f24a377f648847a5ee36a3f006bf8742f1bea6d/desc.svg');
+}
+.unorder {
+  background-image: url('https://raw.githubusercontent.com/Eugen-der-edle-Ritter/data_storage/ebf7e0b6e6034c032396cb823675704dd9781b15/unorder.svg');
+}
+.addBtn {
+  margin: 0;
+  border-radius: 0 12px 12px 0;
+}
